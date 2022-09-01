@@ -57,13 +57,25 @@
 
 // >>>> Третья задача
 
+// System.Console.WriteLine("Введите число:");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// if(a%2==0){
+//     System.Console.WriteLine($"Число {a} является четным");
+// }
+// else{
+//         System.Console.WriteLine($"Число {a} является нечетным");
+// }
+
+// >>>> Четвертая задача
+
 System.Console.WriteLine("Введите число:");
 int a = Convert.ToInt32(Console.ReadLine());
 
-if(a%2==0){
-    System.Console.WriteLine($"Число {a} является четным");
+for (int i = 2; i <= a; i+=2)
+{
+    Console.Write(i + " ");
 }
-else{
-        System.Console.WriteLine($"Число {a} является нечетным");
-
+if(a<2){
+    System.Console.WriteLine("Четных чисел, удовлетворяющих условию, нет");
 }
